@@ -102,6 +102,8 @@ return packer.startup(function(use)
   }
   use 'JoosepAlviste/nvim-ts-context-commentstring' -- adds context functionality to use different commenting string depending on context. Useful for jsx.
   
+  -- Gitsigns
+  use 'lewis6991/gitsigns.nvim'
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
