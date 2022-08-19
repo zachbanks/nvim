@@ -45,7 +45,7 @@ keymap('n', '<S-h>', ':bprevious<CR>', opts)
 -- Insert 
 keymap('i', 'kj', '<ESC>', opts)
 keymap('i', '<C-CR>', '<ESC>o', opts) -- Command Enter functionality
-keymap('i', '<S-CR>', '<ESC>A', opts) -- Skip to end of line while typing
+
 -- Visual
 --
 -- Stay in indent mode
