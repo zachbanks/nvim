@@ -92,6 +92,17 @@ return packer.startup(function(use)
   -- Autopairs plugin - closes parens and quotes
   use 'windwp/nvim-autopairs'
 
+  -- Comments plugin
+  -- main commenting plugin
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
+  use 'JoosepAlviste/nvim-ts-context-commentstring' -- adds context functionality to use different commenting string depending on context. Useful for jsx.
+  
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
