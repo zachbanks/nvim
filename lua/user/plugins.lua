@@ -59,7 +59,15 @@ use({
 -- Gruvbox color scheme
 use { "ellisonleao/gruvbox.nvim" }
 
+-- CMP auto completion related plugins
+use 'hrsh7th/nvim-cmp' -- Completion plugin
+use 'hrsh7th/cmp-buffer' -- buffer completion
+use 'hrsh7th/cmp-path' -- path completion
+use 'hrsh7th/cmp-cmdline' -- cmdline completions
+use 'saadparwaiz1/cmp_luasnip' -- snippet completions
 	-- Automatically set up your configuration after cloning packer.nvim
+use 'L3MON4D3/LuaSnip' -- snippet engine
+use 'rafamadriz/friendly-snippets' -- a bunch of useful snippets
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
