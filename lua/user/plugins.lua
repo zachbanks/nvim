@@ -68,6 +68,8 @@ use 'saadparwaiz1/cmp_luasnip' -- snippet completions
 use 'L3MON4D3/LuaSnip' -- snippet engine
 use 'rafamadriz/friendly-snippets' -- a bunch of useful snippets
 use 'hrsh7th/cmp-nvim-lsp'
+use 'hrsh7th/cmp-nvim-lua'
+
 
 -- LSP plugins
 use 'neovim/nvim-lspconfig' -- enable lspconfig
