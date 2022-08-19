@@ -89,7 +89,8 @@ return packer.startup(function(use)
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
 
-
+  -- Autopairs plugin - closes parens and quotes
+  use 'windwp/nvim-autopairs'
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
