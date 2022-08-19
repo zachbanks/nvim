@@ -14,6 +14,6 @@ vim.opt.smartindent = true
 vim.opt.showtabline = 2 -- always show tabs
 vim.opt.mouse = "a" -- allow mouse use in all modes
 vim.opt.ignorecase = true -- ignore case in search patterns
-vim.opt.smartcase = true
+vim.opt.smartcase = false
 vim.opt.clipboard = "unnamedplus" -- allows access to system clipboard
 vim.opt.termguicolors = true

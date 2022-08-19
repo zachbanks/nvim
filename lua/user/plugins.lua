@@ -65,9 +65,17 @@ use 'hrsh7th/cmp-buffer' -- buffer completion
 use 'hrsh7th/cmp-path' -- path completion
 use 'hrsh7th/cmp-cmdline' -- cmdline completions
 use 'saadparwaiz1/cmp_luasnip' -- snippet completions
-	-- Automatically set up your configuration after cloning packer.nvim
 use 'L3MON4D3/LuaSnip' -- snippet engine
 use 'rafamadriz/friendly-snippets' -- a bunch of useful snippets
+use 'hrsh7th/cmp-nvim-lsp'
+
+-- LSP plugins
+use 'neovim/nvim-lspconfig' -- enable lspconfig
+use 'williamboman/nvim-lsp-installer' -- simple to use language server installer
+
+
+
+-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
