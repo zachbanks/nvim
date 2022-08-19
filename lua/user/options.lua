@@ -1,0 +1,19 @@
+vim.opt.relativenumber = true
+vim.opt.number = true
+vim.opt.expandtab = true
+vim.opt.undofile = true -- persistant undo file
+vim.opt.numberwidth = 4
+vim.opt.wrap = true -- word wrap
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.cursorline = true
+vim.opt.updatetime = 300 -- faster completiton. default = 400ms
+vim.opt.splitright = true -- forces window splits to right
+vim.opt.splitbelow = true -- forces splits to bottom
+vim.opt.smartindent = true
+vim.opt.showtabline = 2 -- always show tabs
+vim.opt.mouse = "a" -- allow mouse use in all modes
+vim.opt.ignorecase = true -- ignore case in search patterns
+vim.opt.smartcase = true
+vim.opt.clipboard = "unnamedplus" -- allows access to system clipboard
+vim.opt.termguicolors = true
