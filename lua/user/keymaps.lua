@@ -40,7 +40,7 @@ keymap('n', '<leader>e', ':NvimTreeToggle<cr>', opts)
 -- Navigate buffers
 keymap('n', '<S-l>', ':bnext<CR>', opts)
 keymap('n', '<S-h>', ':bprevious<CR>', opts)
-keymap('n', '<S-w>', ':bd<CR>', opts)
+keymap('n', '<S-q>', ':bd<CR>', opts)
 
 
 -- Insert 
@@ -74,5 +74,10 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- Telescope
 keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>t", ":Telescope live_grep<CR>", opts)
+
+-- Toggle Term
+keymap('n', '<leader>p', '<cmd>lua _PYTHON_TOGGLE()<CR>', opts) 
+keymap("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", {noremap = true, silent = true})
+
 -- keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
 -- keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
