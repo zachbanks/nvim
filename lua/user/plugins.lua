@@ -119,6 +119,10 @@ return packer.startup(function(use)
     use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
     use 'moll/vim-bbye'
 
+    -- Toggle term
+    use 'akinsho/toggleterm.nvim'
+
+
 
     if PACKER_BOOTSTRAP then
         require("packer").sync()
