@@ -115,6 +115,9 @@ return packer.startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 
+    -- Bufferline/tabs plugin
+    use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+    use 'moll/vim-bbye'
 
 
     if PACKER_BOOTSTRAP then
