@@ -122,7 +122,7 @@ return packer.startup(function(use)
     -- Toggle term
     use 'akinsho/toggleterm.nvim'
 
-
+    use 'NvChad/nvim-colorizer.lua'
 
     if PACKER_BOOTSTRAP then
         require("packer").sync()
