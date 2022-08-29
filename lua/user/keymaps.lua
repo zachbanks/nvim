@@ -46,7 +46,7 @@ keymap('n', '<S-q>', ':bd<CR>', opts)
 -- Insert 
 keymap('i', 'kj', '<ESC>', opts)
 keymap('i', '<C-CR>', '<ESC>o', opts) -- Command Enter functionality
-keymap('i', '<S-CR>', '<ESC>A ', opts) -- Command Enter functionality
+keymap('i', '<S-CR>', '<ESC>a ', opts) -- Command Enter functionality TODO: Still needs refinement to get desired functinality
 
 -- Visual
 --
@@ -79,3 +79,6 @@ keymap("n", "<leader>t", ":Telescope live_grep<CR>", opts)
 keymap('n', '<leader>p', '<cmd>lua _PYTHON_TOGGLE()<CR>', opts) 
 keymap("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", {noremap = true, silent = true})
 
+-- Remap :w to save
+keymap('n', '<C-s>', '<ESC>:w<CR>', opts)
+keymap('i', '<C-s>', '<ESC>:w<CR>', opts)
