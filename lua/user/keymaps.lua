@@ -46,7 +46,7 @@ keymap('n', '<S-q>', ':bd<CR>', opts)
 -- Insert 
 keymap('i', 'kj', '<ESC>', opts)
 keymap('i', '<C-CR>', '<ESC>o', opts) -- Command Enter functionality
-keymap('i', '<S-CR>', '<ESC>a ', opts) -- Command Enter functionality TODO: Still needs refinement to get desired functinality
+keymap('i', '<S-CR>', '<ESC>a ', opts) -- Command Enter functionality TODO: Still needs refinement to get desired functionality
 
 -- Visual
 --
@@ -82,3 +82,16 @@ keymap("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", {noremap = true, sile
 -- Remap :w to save
 keymap('n', '<C-s>', '<ESC>:w<CR>', opts)
 keymap('i', '<C-s>', '<ESC>:w<CR>', opts)
+
+
+-- Hop
+-- place this in one of your configuration file(s)
+vim.api.nvim_set_keymap('', 'f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>", {})
+vim.api.nvim_set_keymap('', 'F', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })<cr>", {})
+vim.api.nvim_set_keymap('', 't', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })<cr>", {})
+vim.api.nvim_set_keymap('', 'T', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })<cr>", {})
+
+keymap('n', '<leader><leader>l', ":HopLine<cr>", opts)
+keymap('n', '<leader><leader>a', ":HopAnywhere<cr>", opts)
+keymap('n', '<leader><leader>c', ":HopChar1<cr>", opts)
+keymap('n', '<leader><leader>w', ":HopWord<cr>", opts)
