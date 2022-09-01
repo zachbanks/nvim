@@ -136,6 +136,8 @@ return packer.startup(function(use)
         end
     }
 
+    -- Cinnamon - smooth scrolling plugin.
+    use 'declancm/cinnamon.nvim'
 
     if PACKER_BOOTSTRAP then
         require("packer").sync()

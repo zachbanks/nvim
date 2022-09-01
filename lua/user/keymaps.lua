@@ -97,3 +97,4 @@ keymap('n', '<leader><leader>a', ":HopAnywhere<cr>", opts)
 keymap('n', '<leader><leader>c', ":HopChar1<cr>", opts)
 keymap('n', '<leader><leader>w', ":HopWord<cr>", opts)
 keymap('n', '<leader><leader>/', ":HopPattern<cr>", opts)
+
