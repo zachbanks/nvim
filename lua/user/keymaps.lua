@@ -6,6 +6,8 @@ local term_opts = { silent = true }
 keymap("","<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+vim.g.timeoutlen=500
+vim.g.ttimeoutlen=500
 
 -- Modes
 --   normal_mode = "n",
@@ -24,12 +26,13 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- oo to add newline without entering insert mode
 keymap("n", "<leader>o", "o<ESC>", opts)
+
 keymap("n", "<leader>O", "O<ESC>", opts)
 
 
 -- Resize panes with arrow keys
 -- TODO: Control arrows interfere with mission control on mac
-keymap('n', '<C-Up>', ':resize +2<CR>', opts)
+
 keymap('n', '<C-Down>', ':resize -2<CR>', opts)
 keymap('n', '<C-Left>', ':vertical resize -2<CR>', opts)
 keymap('n', '<C-Right>', ':vertical resize +2<CR>', opts)
@@ -80,8 +83,8 @@ keymap('n', '<leader>p', '<cmd>lua _PYTHON_TOGGLE()<CR>', opts)
 keymap("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", {noremap = true, silent = true})
 
 -- Remap :w to save
-keymap('n', '<C-s>', '<ESC>:w<CR>', opts)
-keymap('i', '<C-s>', '<ESC>:w<CR>', opts)
+keymap('n', '<leader>w', '<ESC>:w<CR>', opts)
+keymap('i', '<leader>w', '<ESC>:w<CR>', opts)
 
 
 -- Hop
